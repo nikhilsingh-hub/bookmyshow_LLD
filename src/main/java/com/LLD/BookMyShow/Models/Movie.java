@@ -6,5 +6,8 @@ import lombok.Data;
 @Data
 @Entity
 public class Movie extends BaseClass{
-    private String movieName;
+    private String name;
+    private String language;
+    private int duration;
+    private double rating;
 }

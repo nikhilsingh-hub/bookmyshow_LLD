@@ -16,4 +16,5 @@ public class ShowSeat  extends BaseClass{
     private  ShowSeatType showSeatType;
     @Enumerated
     private SeatStatus seatStatus;
+    private double price;
 }

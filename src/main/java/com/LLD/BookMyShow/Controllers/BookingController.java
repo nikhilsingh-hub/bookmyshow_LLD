@@ -37,7 +37,7 @@ public class BookingController {
     public BookingResponseDTO finaliseSeats(@RequestBody FinalBookRequestDTO req){
         BookingResponseDTO res = new BookingResponseDTO();
         try{
-            Booking booking = bookingService.bookSeats(req.getBookingId(), req.getPaymentIds());
+            Booking booking = bookingService.finaliseSeats(req.getBookingId(), req.getPaymentIds());
             res.setResponseType(ResponseType.SUCCESS);
             res.setBooking(booking);
         } catch (Exception e) {
