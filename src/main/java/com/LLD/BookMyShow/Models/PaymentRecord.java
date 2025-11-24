@@ -7,6 +7,7 @@ import lombok.Data;
 @Data
 @Entity
 public class PaymentRecord extends BaseClass{
-    private String payRefID;
+    private String transactionId;
     private double amount;
+    private PaymentStatus paymentStatus;
 }
